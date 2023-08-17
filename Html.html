@@ -4,31 +4,33 @@
     <link rel="shortcut icon" href="asset/peach.png">
     <!-- Tag titre -->
     <title>HTML</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     
 </head>
-<body>
+<body id="body">
     <a name="haut"></a>
-   <section>
+   <nav>
     <!-- titre numero1 -->
-    <h1>Portfolio</h1>
+    <h1 id="Portfolio">Portfolio</h1>
     <!-- tag pour un lien dans la meme page  -->
-    <a href="#Home">Home</a>
-    <a href="#About">About</a>
-    <a href="#Work&service">Work&service</a>
-    <a href="#Contact">Contact</a>
-</section> 
+    <a class="lc" href="#Home">Home</a>
+    <a class="lc" href="#About">About</a>
+    <a class="lc" href="#Work&service">Work</a>
+    <a class="lc" href="#resume">Resume</a>
+    <a class="lc" href="#contact">Contact</a>
+</nav> 
 <section>
-    <a name="Home"></a>
-    <h2>Home</h2>
+    <a :hove name="Home"></a>
+    <h2 class="h2">Home</h2>
     <!-- Lien youtube -->
     <iframe width="560" height="315" src="https://www.youtube.com/embed/qsbkZ7gIKnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 </section>
 <section>
     <a name="About"></a>
-    <h2>About</h2>
+    <h2 class="h2">About</h2>
     <!-- Tag pour une paragraphe -->
-    <p>My name is Hedi full stack js student</p>
+    <p id="p1">My name is Hedi full stack js student</p>
     <!-- Tag pour une liste -->
     <dl>
         <dt>Skills</dt>
@@ -43,7 +45,7 @@
 </section>
 <section>
     <a name="Work&service"></a>
-   <h2>Work & service</h2>
+   <h2 class="h2">Work & service</h2>
    <section>
    <!-- Tag pour un tableau avec bordure -->
     <table style="border:1px solid red">
@@ -66,10 +68,15 @@
     </tr>
    </table>
 </section>
+<section id="resume">
+    <h2 class="h2">Resume</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta libero, soluta ratione velit consequuntur 
+    odio necessitatibus nobis ut, voluptate laboriosam commodi incidunt dolores iure vero molestias enim quam nemo dolore.</p>
+</section>
 <section>
-    <a name="Contact"></a>
+    <a name="contact"></a>
     <!-- tag pour un formulaire -->
-    <h2>Contact</h2>
+    <h2 class="h2">Contact</h2>
     <form action="">Contact</form><br><br>
         <label for="Nom">Nom</label><input type="text" id="Nom" placeholder="Entrez votre nom">
         <br>
@@ -79,7 +86,6 @@
         <br>
        <!-- tag pour un bouton -->
         <button type="submit">Envoyer</button>
-
 </section>
 </body>
 <footer>
